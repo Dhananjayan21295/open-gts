@@ -32,6 +32,10 @@ grails.plugin.springsecurity.filterChain.chainMap = [
 	[pattern: 'favicon.ico', filters: 'none'],
 	[pattern: '*',             filters: 'JOINED_FILTERS']
 ]
+grails.mime.types = [
+		json:          ['application/json', 'text/json'],
+		xml:           ['text/xml', 'application/xml']
+]
 
 
 

@@ -8,6 +8,10 @@ class UrlMappings {
                 // apply constraints here
             }
         }
+		
+		"/users"(controller:"user",action:"index",method: "GET")
+        "/users"(controller:"user",action:"save",method: 'POST')
+        "/users"(controller:"user",action:"update",method: 'PUT')
 
         "/"( view:"/index")
 

@@ -2,9 +2,11 @@ package auth
 
 import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString
+import grails.rest.*
 
 @EqualsAndHashCode(includes='username')
 @ToString(includes='username', includeNames=true, includePackage=false)
+@Resource(uri='/users', formats=['json'])
 class User implements Serializable {
 
 	private static final long serialVersionUID = 1
